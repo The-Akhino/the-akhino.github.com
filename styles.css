@@ -1,48 +1,51 @@
-#contenedor{
+#contenedor {
     display: flex;
     justify-content: center;
-    align-items: center;   
-    height: 70vh; 
+    align-items: center;
+    height: 70vh;
     margin: 0;
-    position: relative; /* Añadimos posición relativa al contenedor */
-    margin-bottom: 0!important; 
+    position: relative;
+    /* Añadimos posición relativa al contenedor */
+    margin-bottom: 0 !important;
 }
 
 .columna-a {
     display: flex;
     flex-direction: column;
     align-items: center;
-    position: absolute;    
+    position: absolute;
 }
 
 
 .caja {
-    max-width: 1920px;    
-    height: auto;    
-    margin: auto;        
+    max-width: 1920px;
+    height: auto;
+    margin: auto;
 }
 
-.img{
+.img {
     text-align: center;
 }
 
 .title-text {
     font-size: 130px;
     line-height: 0.7;
-    font-family: 'Anton', sans-serif;   
-    color: #F7E1AE;   
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8); /* Agrega sombras al texto */ 
+    font-family: 'Anton', sans-serif;
+    color: #F7E1AE;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+    /* Agrega sombras al texto */
     letter-spacing: -2px;
-    text-align: justify;    
+    text-align: justify;
 }
 
-.subtitle-text{
-    font-size: 60px;    
+.subtitle-text {
+    font-size: 60px;
     line-height: 1;
-    font-family: 'Anton', sans-serif;   
-    color: #F7E1AE;   
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8); /* Agrega sombras al texto */         
-    text-align: justify ;
+    font-family: 'Anton', sans-serif;
+    color: #F7E1AE;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+    /* Agrega sombras al texto */
+    text-align: justify;
 }
 
 .paragraph-below-title {
@@ -50,44 +53,53 @@
     color: #2B7A0B;
     font-size: 36px;
     text-align: center;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8); /* Agrega sombras al texto */     
-    font-weight: 700;  
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+    /* Agrega sombras al texto */
+    font-weight: 700;
 }
 
 .text-date {
     font-size: 26px;
-    color: #F7E1AE; /* Texto en blanco */
+    color: #F7E1AE;
+    /* Texto en blanco */
     font-family: 'Roboto Condensed', sans-serif;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8); /* Agrega sombras al texto */         
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+    /* Agrega sombras al texto */
     text-align: center;
     font-weight: bold;
 }
 
-.subtitulo-entrada {    
+.subtitulo-entrada {
     opacity: 0;
-    animation: entrada 0.5s ease-in forwards; /* Duración de la animación de 0.5 segundos con una función de temporización "ease" */
+    animation: entrada 0.5s ease-in forwards;
+    /* Duración de la animación de 0.5 segundos con una función de temporización "ease" */
     animation-delay: 5s;
 }
 
 .fade-in-text {
     opacity: 0;
-    animation: fadeIn 6s ease-in forwards; /* Animación de 2 segundos */    
-    animation-delay: 1s;  
+    animation: fadeIn 6s ease-in forwards;
+    /* Animación de 2 segundos */
+    animation-delay: 1s;
 }
 
 .appar-button {
     opacity: 0;
-    animation: aparicion 1s ease-in forwards; /* Duración de la animación y función de temporización */
-    animation-delay: 7s;    
+    animation: aparicion 1s ease-in forwards;
+    /* Duración de la animación y función de temporización */
+    animation-delay: 7s;
 }
 
 @keyframes aparicion {
     from {
-        transform: translateX(-100%); /* El botón comenzará fuera de la pantalla a la izquierda */
+        transform: translateX(-100%);
+        /* El botón comenzará fuera de la pantalla a la izquierda */
         opacity: 1;
     }
+
     to {
-        transform: translateX(0); /* El botón se desplaza hacia su posición original en el centro */
+        transform: translateX(0);
+        /* El botón se desplaza hacia su posición original en el centro */
         opacity: 1;
     }
 }
@@ -96,6 +108,7 @@
     0% {
         opacity: 0;
     }
+
     100% {
         opacity: 1;
     }
@@ -103,60 +116,76 @@
 
 @keyframes entrada {
     from {
-        transform: scaleY(0); /* Inicia con escala vertical 0, oculto */
-        opacity: 0; /* Inicia completamente transparente */
+        transform: scaleY(0);
+        /* Inicia con escala vertical 0, oculto */
+        opacity: 0;
+        /* Inicia completamente transparente */
     }
+
     to {
-        transform: scaleY(1); /* Aumenta la escala vertical a 1, mostrando el contenido completo */
-        opacity: 1; /* Se vuelve completamente visible */
+        transform: scaleY(1);
+        /* Aumenta la escala vertical a 1, mostrando el contenido completo */
+        opacity: 1;
+        /* Se vuelve completamente visible */
     }
 }
 
-.appar-date {    
+.appar-date {
     opacity: 0;
-    animation: fadeIn 10s ease-in forwards; /* Animación de 2 segundos */         
+    animation: fadeIn 10s ease-in forwards;
+    /* Animación de 2 segundos */
 }
 
 
 #inicio {
-    background: #0000007a url('https://github.com/The-Akhino/the-akhino.github.com/blob/main/img/background/fon_con_inia.jpg?raw=true') no-repeat;
+    background: #0000007a url('img/background/fon_con_inia.jpg') no-repeat;
     background-size: cover;
     background-position: center;
-    background-repeat: no-repeat;    
+    background-repeat: no-repeat;
 }
 
 .countdown-digit {
-    font-size: 36px; /* Tamaño de fuente de los dígitos */
-    font-weight: bold; /* Texto en negrita */
-    text-align: center; /* Alineación al centro */
-    color: #fff; /* Texto en blanco */    
+    font-size: 36px;
+    /* Tamaño de fuente de los dígitos */
+    font-weight: bold;
+    /* Texto en negrita */
+    text-align: center;
+    /* Alineación al centro */
+    color: #fff;
+    /* Texto en blanco */
     align-items: center;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8); /* Agrega sombras al texto */  
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+    /* Agrega sombras al texto */
 }
 
 /* Estilos para los indicadores */
 .countdown-label {
-    font-size: 18px; /* Tamaño de fuente de los indicadores */
-    text-align: center; /* Alineación al centro */
-    color: #fff; /* Texto en blanco */
-    padding: 2px;    
+    font-size: 18px;
+    /* Tamaño de fuente de los indicadores */
+    text-align: center;
+    /* Alineación al centro */
+    color: #fff;
+    /* Texto en blanco */
+    padding: 2px;
     align-items: center;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8); /* Agrega sombras al texto */  
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+    /* Agrega sombras al texto */
 }
 
-#nuevo-contenedor {    
-    height: 30vh; 
+#nuevo-contenedor {
+    height: 30vh;
     width: 100%;
     display: flex;
     justify-content: center;
-    align-items: center;    
-    margin-top: 0!important;
+    align-items: center;
+    margin-top: 0 !important;
 }
 
-.fila-con-cuadrados {    
+.fila-con-cuadrados {
     display: flex;
-    align-items: center; /* Centra verticalmente los cuadrados */
-    margin-top: 0!important;
+    align-items: center;
+    /* Centra verticalmente los cuadrados */
+    margin-top: 0 !important;
 }
 
 .cuadrado {
@@ -168,79 +197,120 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-right: 10px; /* Espacio entre los cuadrados */
-    margin-left: 10px; /* Espacio entre los cuadrados */
-    color: #EEEEEE; /* Color de texto blanco */
+    margin-right: 10px;
+    /* Espacio entre los cuadrados */
+    margin-left: 10px;
+    /* Espacio entre los cuadrados */
+    color: #EEEEEE;
+    /* Color de texto blanco */
     border-radius: 20px;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8); /* Agrega sombras al texto */  
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+    /* Agrega sombras al texto */
 }
 
 .separador {
-    margin: 0 10px; /* Agrega espacio a la izquierda y derecha del separador */
+    margin: 0 10px;
+    /* Agrega espacio a la izquierda y derecha del separador */
     font-size: 28px;
     font-weight: bolder;
     color: #EEEEEE;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8); /* Agrega sombras al texto */  
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+    /* Agrega sombras al texto */
 }
 
-.cuadro-entrada-a{    
+.cuadro-entrada-a {
     opacity: 0;
-    animation: cuadre 0.5s ease-in forwards; /* Duración de la animación de 0.5 segundos con una función de temporización "ease" */
+    animation: cuadre 0.5s ease-in forwards;
+    /* Duración de la animación de 0.5 segundos con una función de temporización "ease" */
     animation-delay: 2s;
 }
 
-.cuadro-entrada-b{    
+.cuadro-entrada-b {
     opacity: 0;
-    animation: cuadre 0.5s ease-in forwards; /* Duración de la animación de 0.5 segundos con una función de temporización "ease" */
+    animation: cuadre 0.5s ease-in forwards;
+    /* Duración de la animación de 0.5 segundos con una función de temporización "ease" */
     animation-delay: 3s;
 }
 
-.cuadro-entrada-c{    
+.cuadro-entrada-c {
     opacity: 0;
-    animation: cuadre 0.5s ease-in forwards; /* Duración de la animación de 0.5 segundos con una función de temporización "ease" */
+    animation: cuadre 0.5s ease-in forwards;
+    /* Duración de la animación de 0.5 segundos con una función de temporización "ease" */
     animation-delay: 4s;
 }
 
-.cuadro-entrada-d{    
+.cuadro-entrada-d {
     opacity: 0;
-    animation: cuadre 0.5s ease-in forwards; /* Duración de la animación de 0.5 segundos con una función de temporización "ease" */
+    animation: cuadre 0.5s ease-in forwards;
+    /* Duración de la animación de 0.5 segundos con una función de temporización "ease" */
     animation-delay: 5s;
 }
 
 @keyframes cuadre {
     from {
-        transform: scaleY(0); /* Inicia con escala vertical 0, oculto */
-        opacity: 0; /* Inicia completamente transparente */
+        transform: scaleY(0);
+        /* Inicia con escala vertical 0, oculto */
+        opacity: 0;
+        /* Inicia completamente transparente */
     }
+
     to {
-        transform: scaleY(1); /* Aumenta la escala vertical a 1, mostrando el contenido completo */
-        opacity: 1; /* Se vuelve completamente visible */
+        transform: scaleY(1);
+        /* Aumenta la escala vertical a 1, mostrando el contenido completo */
+        opacity: 1;
+        /* Se vuelve completamente visible */
     }
 }
 
 /* Personaliza el botón */
 .btn.personalizado {
-    background-color: #133B5C; /* Cambia el color de fondo */
-    color: #FFFBF5; /* Cambia el color del texto */
-    border: 2px solid #1D2D50; /* Cambia el borde del botón */
-    padding: 10px 20px; /* Ajusta el relleno (padding) */
-    border-radius: 5px; /* Agrega bordes redondeados */
-    font-weight: 700; /* Hace que el texto sea negrita */
+    background-color: #133B5C;
+    /* Cambia el color de fondo */
+    color: #FFFBF5;
+    /* Cambia el color del texto */
+    border: 2px solid #1D2D50;
+    /* Cambia el borde del botón */
+    padding: 10px 20px;
+    /* Ajusta el relleno (padding) */
+    border-radius: 5px;
+    /* Agrega bordes redondeados */
+    font-weight: 700;
+    /* Hace que el texto sea negrita */
 }
 
 .btn.personalizado:hover {
-    background-color: #FFFBF5; /* Cambia el color de fondo al pasar el cursor */
-    color: #133B5C; /* Cambia el color del texto al pasar el cursor */
-    border: 2px solid #1D2D50; /* Mantén el borde original */
+    background-color: #FFFBF5;
+    /* Cambia el color de fondo al pasar el cursor */
+    color: #133B5C;
+    /* Cambia el color del texto al pasar el cursor */
+    border: 2px solid #1D2D50;
+    /* Mantén el borde original */
 }
+
 /* Personaliza el ícono */
 .icono {
-    font-size: 20px; /* Cambia el tamaño del ícono */
-    margin-right: 5px; /* Agrega espacio entre el ícono y el texto */
+    font-size: 20px;
+    /* Cambia el tamaño del ícono */
+    margin-right: 5px;
+    /* Agrega espacio entre el ícono y el texto */
 }
 
-.form-vent{
+.form-vent {
     width: 100%;
     height: 75vh;
-  }
+}
 
+.modal-header{
+    background-color: #213363;     
+}
+
+.modal-title{    
+    color: #fff;         
+    font-size: 16px;
+}
+
+.icon{
+    font-size: 48px;
+    margin-right: 10px;
+    color: #fff;
+}
