@@ -1,0 +1,109 @@
+@media screen and (orientation: landscape) and (max-height: 767px) {
+    /* Estilos que se aplicarán cuando la pantalla esté en modo apaisado */
+
+    #contenedor {        
+        height: 80vh;        
+    }
+
+    .pie-de-pagina {
+        height: 20vh;        
+    }
+
+    .title-text {
+        font-size: 68px;
+        line-height: 0.7;   
+        text-align: center;     
+    }
+
+    .subtitle-text {
+        font-size: 28.5px;
+        text-align: center;        
+    }
+
+    .paragraph-below-title {
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .text-date {
+        font-size: 13px;
+    }
+
+    .countdown-digit {
+        font-size: 12px;
+        padding: 0;
+        /* Tamaño de fuente de los dígitos */
+    }
+
+    /* Estilos para los indicadores */
+    .countdown-label {
+        font-size: 8px;
+        /* Tamaño de fuente de los indicadores */
+    }
+
+    .cuadrado {
+        width: 45px;
+        height: 55px;        
+        margin-right: 3px; /* Espacio entre los cuadrados */
+        margin-left: 3px; /* Espacio entre los cuadrados */  
+        border-radius: 10px;       
+    }
+    
+    .separador {
+        margin: 0 3px; /* Agrega espacio a la izquierda y derecha del separador */
+        font-size: 10px;        
+    }
+    
+}
+
+@media screen and (orientation: portrait) and (max-height: 1023px) {
+
+    /* Estilos que se aplicarán cuando la pantalla esté en modo vertical */
+    .title-text {
+        font-size: 72px;
+        line-height: 0.7;
+        text-align: center;        
+    }
+
+    .subtitle-text {
+        font-size: 30px;
+        line-height: 1;
+        text-align: center;
+    }
+
+    .paragraph-below-title {
+        font-size: 28px;
+        text-align: center;
+        line-height: 1.2;
+
+    }
+
+    .text-date {
+        font-size: 14px;
+    }
+
+    .countdown-digit {
+        font-size: 16px;
+        /* Tamaño de fuente de los dígitos */
+    }
+
+    /* Estilos para los indicadores */
+    .countdown-label {
+        font-size: 8px;
+        /* Tamaño de fuente de los indicadores */
+    }
+
+    .cuadrado {
+        width: 45px;
+        height: 55px;        
+        margin-right: 3px; /* Espacio entre los cuadrados */
+        margin-left: 3px; /* Espacio entre los cuadrados */    
+        border-radius: 10px;    
+    }
+    
+    .separador {
+        margin: 0 3px; /* Agrega espacio a la izquierda y derecha del separador */
+        font-size: 10px;        
+    }
+
+}
